@@ -1,8 +1,8 @@
 exports.up = (knex, Promise) => {
-  return knex.schema.createTable('users', (table) => {
+  return knex.schema.createTable('Teams', (table) => {
     table.increments('id').primary()
     table.string('name')
-    table.string('email')
+    table.interger('team_id')
   })
 }
 
